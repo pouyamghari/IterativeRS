@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--task', type=str, default="faithful")
 parser.add_argument('--with_sft', type=int, default=1)
-parser.add_argument('--num_epochs_per_step', type=int, default=2)
+parser.add_argument('--num_steps_per_epoch', type=int, default=2)
 parser.add_argument('--per_device_train_batch_size', type=int, default=8)
 parser.add_argument('--per_device_eval_batch_size', type=int, default=8)
 parser.add_argument('--num_mini_batches', type=int, default=4)
