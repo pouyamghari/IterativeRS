@@ -36,7 +36,7 @@ do
       Iterativers.py \
       --epoch $epoch \
       --task $task \
-      --num_epochs_per_step 5 \
+      --num_steps_per_epoch 5 \
       --with_sft 0
   done
   python merge_iterativers.py --with_sft 0 --split train
@@ -59,7 +59,7 @@ do
       Iterativers.py \
       --epoch $epoch \
       --task $task \
-      --num_epochs_per_step 5 \
+      --num_steps_per_epoch 5 \
       --with_sft 1
   done
   python merge_iterativers.py --with_sft 1 --split train
