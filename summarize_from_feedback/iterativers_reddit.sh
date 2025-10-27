@@ -1,4 +1,3 @@
-conda activate reddit
 set -ex
 
 python -u split_data.py
